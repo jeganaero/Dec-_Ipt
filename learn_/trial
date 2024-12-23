@@ -1,0 +1,72 @@
+// let num=[1,2,3,4,5,6,7,8,9,10]
+// const number=num.filter((Val,idx,act)=>Val%2 !==0)
+// console.log(number);
+// var a="hi"
+// var b="hello"
+// console.log(`${a}dude${b}jegan`);
+// setTimeout(() => {
+//     console.log("just wait");
+    
+// }, 5000);
+
+// 
+// class parent{
+//     bike(){
+//         console.log("rcbike");
+        
+//     }
+//     car(){
+//         console.log("have fordcar");
+        
+//     }
+//     money(){
+//         console.log("have 1CR");
+        
+//     }
+// }
+// class child extends parent{
+//     house(){
+//      console.log("having own house");
+     
+//     }
+// }
+// const chilld = new child()
+// chilld.bike()
+// chilld.car()
+// chilld.house()
+// function gym(){
+//     return new Promise((resolve, reject) => {
+//         const d2wrk= false
+//         if (d2wrk){
+//             resolve("good day");
+//         }else{
+//             reject("Not good");
+            
+//         }
+//     })
+// }
+// async function jegan() {
+//     try {
+//         const gym1=await gym()
+//         console.log(gym1);
+        
+//     } catch (err) { 
+//         console.log(err);
+        
+//     }
+    
+// }
+// jegan()
+class obj{
+    constructor (name,id,address){
+    this.name=name
+    this.id=id
+    this.address=address}
+    stu (){
+        console.log(`the name is ${this.name} id is ${this.id} and address is ${this.address}`);
+        
+    }}
+    const person = new obj ('jegan','03','MDU')
+    const person1 =new obj ('saje',11,'jeevanagar')
+person.stu()
+person1.stu()

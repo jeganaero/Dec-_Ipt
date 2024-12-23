@@ -1,0 +1,39 @@
+// split
+let para="welcome to the place"
+let para1=para.split("to")
+console.log(para1);
+// join
+let doc=["jegan bharathiraja"]
+let dc=doc.join("")
+console.log(dc);
+// reverse
+let nam="jeganbharathiraja"
+let name1= nam.split("").reverse("").join("")
+console.log(name1);
+// charAt
+let word="jass"
+console.log(word.charAt(2));
+// indexof
+const train="tejasexpress"
+console.log(train.indexOf("e"));
+console.log(train.lastIndexOf("s"));
+// includes
+var bowl="there"
+var bowl=bowl.includes("s")
+console.log(bowl);
+// sub string
+let car="tataswift"
+console.log(car.substring(4));
+// uppercase-lowecase
+let box="country"
+let cap=box.toUpperCase()
+console.log(cap);
+let box1=cap.toLowerCase()
+console.log(box1);
+let str="hello"
+console.log(str.repeat(3));
+console.log(str.replace("hello","welcome"));
+
+
+
+

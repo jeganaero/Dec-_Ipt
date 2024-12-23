@@ -1,0 +1,49 @@
+// // constructor 
+// function bike(name,model,year){
+//     this.bikename=name
+//     this.bikemodel=model
+//     this.bikeyear=year
+// }
+// const details= new bike("duke",2024,2024)
+// console.log(details);
+// // // class
+// class students{
+//     constructor(name,dep,batch){
+//         this.studentname=name
+//         this.studentdep=dep
+//         this.studentbatch=batch}
+    
+// }
+// const details1=new students("jegan","aero",2015)
+// const details2=new students("ajay","IT",2015)
+// const details3=new students("aravind","cse",2015)
+// console.log(details2);
+// // class methods
+// class student{
+//     constructor(name,dep,batch){
+//         this.name=name
+//         this.dep=dep
+//         this.batch=batch}
+//         stud(){
+//             console.log(`the name is ${this.name} and departmentis${this.dep}and yearof${this.batch}`);
+//             }
+// }
+// const person=new student("jeagn","aero",2015)
+// person.stud()
+// inheritence concept
+class parent{
+    house(){
+        console.log("own house");}
+    land(){
+        console.log("own land");}
+    Car (){
+        console.log("own car");}
+}
+class son extends parent{
+    bike(){
+        console.log("own bike");}
+}
+const Sons=new son
+Sons.house()
+Sons.land()
+Sons.bike()

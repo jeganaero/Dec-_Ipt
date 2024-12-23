@@ -1,0 +1,139 @@
+// callbackhell 
+// function box1(x){
+//     setTimeout(() => {
+//         console.log("bb1");
+//         x();
+//     }, 4000);
+// }
+// function box2(y){
+//     setTimeout(() => {
+//         console.log("bb2");
+//         y();
+//     }, 5000);
+// }
+// function box3(z){
+//     setTimeout(() => {
+//         console.log("bb3");
+//         z();
+//     }, 3000);
+// }
+// function box4(){
+//     setTimeout(() => {
+//         console.log("bb4");
+        
+//     }, 1000);
+// }
+// box1(()=>{
+//     box2(()=>{
+//         box3(box4)
+//     })
+// })
+
+// promise 
+// function water(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const fillwater=true
+//             if(fillwater){
+//                 resolve("water can is filled")
+//             }else{
+//                 reject("watercan is not filled")
+//             }
+
+//         }, 3000);
+//     })
+// }
+// function room(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const rooms=false
+//             if(rooms){
+//                 resolve("room is cleaned")
+//             }else{
+//                 reject("room is not cleaned")
+//             }
+            
+//         }, 2000);
+//     })
+// }
+// function trash(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const trashses=false
+//             if(trashses){
+//                 resolve("trash done")
+//             }else{
+//                 reject("trash is not done")
+//             }
+//         }, 500); 
+//     })  
+// }
+// water().then(value=>{console.log(value);return room()
+// }).catch(value2=>{console.log(value2);return trash()
+// }).catch(err=>{console.log(err)
+// })
+
+// asyn/await 
+function water(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const fillwater=true
+            if(fillwater){
+                resolve("water can is filled")
+            }else{
+                reject("watercan is not filled")
+            }
+
+        }, 3000);
+    })
+}
+function room(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const rooms=false
+            if(rooms){
+                resolve("room is cleaned")
+            }else{
+                reject("room is not cleaned")
+            }
+            
+        }, 2000);
+    })
+}
+function trash(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const trashses=false
+            if(trashses){
+                resolve("trash done")
+            }else{
+                reject("trash is not done")
+            }
+        }, 500); 
+    })  
+}
+async function work() {
+    try {
+        const watercan=await water()       
+        console.log(watercan);
+         const roomclean=await room()
+         console.log(roomclean);
+         const trashout=await trash()
+         console.log(trashout);           
+    } catch (error1) {
+        console.log(error1);
+        
+    }
+    try {const trashout=await trash()
+        console.log(trashout);        
+        
+    } catch (error2) {
+        console.log(error2);
+        
+        }
+    }
+work()
+
+
+
+

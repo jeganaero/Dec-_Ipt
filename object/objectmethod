@@ -1,0 +1,43 @@
+// nested array and object
+var siet=[{
+    name:"taylor",
+    age:30,
+    ph:8988},
+    {
+     name:"jack",
+     age:30,
+     ph:9098},
+    {
+     name:"jones",
+     age:32,
+     ph:8789},
+    {
+        name:"bolt",
+        age:33,
+        ph:7777},
+    {
+        name:"bean",
+        age:29,
+        ph:8090},
+    {
+        name:"khan",
+        age:32,
+        ph:9000
+    }
+]
+console.log(siet[3].name,siet[3].ph);
+console.log([siet[2],siet[4]])
+// object destructure
+var cube={
+    name:"cuban",
+    shape:"round",
+    total:3
+}
+const{name,shape,total}=cube
+console.log(name);
+// array destructure
+var zoo=["lion","tiger","elepht","deer"]
+const[lead,sub,frnt,secnd]=zoo
+console.log(frnt);
+
+

@@ -1,0 +1,181 @@
+// // function see(a,b)
+// // {
+// // console.log("hello"+a,"How are you"+b);
+// // }
+// // see("name,","?")
+
+// // const square = (a) => a * a
+// // console.log(square(8))
+
+// // function test(a){
+// // console.log((a>18)?"Theperson is adult":"The person is not adult");
+// // }
+// // test(10)
+// // let gender=(b)=>(b>18)?"Theperson is adult":"The person is not adult"
+// // console.log(gender(20));
+
+
+// var tnt=10
+// tnt++
+// console.log(tnt);
+
+
+// // var a=("stock")
+// // for (i=0;i<a.length;i++){
+// //     console.log(a[i]);
+// // }
+// // var a=["stock",10,12,"box"]
+// // for (i=0;i<a.length;i++){
+// //     console.log(a[i]);
+// // }
+// // let i=0
+// // while (i<=10){
+// //     if (i % 2 !==0){
+// //         console.log("oddnum"+i);
+// //         }
+// //     i++
+// //     }
+// // do{
+// //     if (i % 2 !==0){
+// //         console.log("oddnum"+i);
+// // }
+// // i++
+// // }
+// // while (i<=10)
+// // for in loop
+// const person={
+//     name :"jegan",
+//     age : 30
+// }
+// for (let X in person){
+//     console.log (X+person[X]);
+//     console.log(person[X]);
+    
+// }
+// let box=["pen",10,"pencil"]
+// for (let contain in box){
+//     console.log(box[contain]);
+// }
+// // for  (i=1;i<=10;i++){
+// //     if(i % 2 == 0)
+// // console.log(i);
+// // }
+// // let a=0
+// // while (a<=10){
+// // if (a%2 ==0){
+// //     console.log("even numer is"+a);
+// //     }
+// //     a++
+// // }
+
+// // function time(board){
+// //     if(board>=10 && board<=11){
+// //         console.log("kerla bus will depart");
+// //         }
+// //  else if (board>=3 && board<=4){
+// //                 console.log("trichy or salem bus will depart");
+// //                  }
+// // else if (board==9){
+// //                 console.log("madurai bus will depart");
+                    
+// //                  }
+// //         else {
+// //             console.log("other bus will depart");
+// //         }
+// // }
+// // time(10.30)
+// // time(9)
+// // time(3.30)
+// // time(2)
+// // // nested object
+// var siet=[{
+//     name:"taylor",
+//     age:30,
+//     ph:8988},
+//     {
+//      name:"jack",
+//      age:30,
+//      ph:9098},
+//     {
+//      name:"jones",
+//      age:32,
+//      ph:8789},
+//     {
+//         name:"bolt",
+//         age:33,
+//         ph:7777},
+//     {
+//         name:"bean",
+//         age:29,
+//         ph:8090},
+//     {
+//         name:"khan",
+//         age:32,
+//         ph:9000
+//     }
+// ]
+// console.log(siet[3].name,siet[3].ph);
+// console.log(siet[2].name,siet[2].age,siet[2].ph);
+// console.log(siet[4].name,siet[4].age,siet[4].ph);
+// // let num=[1,2,3,4,5,6,7,8,9,10]
+// // const oddnumber=num.filter((Val,idx,act)=>Val%2 !==0)
+// // console.log(oddnumber);
+// // const evennumber=num.filter((Val,idx,act)=>Val%2 ==0)
+// // console.log(evennumber);
+// // class office{
+// //     constructor(name,id,phone,location,bloodgroup){
+// //         this.name=name
+// //         this.id=id
+// //         this.ph=phone
+// //         this.city=location
+// //         this.bloodgrp=bloodgroup}
+// //         person(){
+// //             console.log(`Name: ${this.name}`)
+// //             console.log(`ID : ${this.id}`)
+// //             console.log(`mobile: ${this.ph}`)
+// //             console.log(`city : ${this.city}`)  
+// //             console.log(`BGrp : ${this.bloodgrp}`)  
+// //             }
+// // }
+// // const crop=new office("jeagn","5184",9942035782,"MDU","AB+")
+// // crop.person()
+// function wake(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const wakeup=true
+//             if(wakeup){
+//              resolve("venkat wake up at 5Am");
+//             }else
+//             reject("venkat not wake up")
+//         }, 3000);
+//     })
+// }
+// function gym(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const gym=true
+//             if(gym){
+//                 resolve("venkat is going to gym")
+//             }else{
+//                 reject("venkat is not going to gym")
+//             }
+//         }, 1000);
+//     })
+// }
+// function office(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const off=false
+//             if(off){
+//                 resolve("venkat is in office")
+//             }else{
+//                 reject("venkat is in leave")
+//             }
+//         }, 5000);
+//     })
+// }
+// wake().then(value=>{console.log(value);return gym()
+// }).then(value2=>{console.log(value2);return office()
+// }).catch(value3=>{console.log(value3);
+// })
+

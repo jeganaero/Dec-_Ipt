@@ -1,0 +1,17 @@
+// for in loop
+var siet={
+    name:"taylor",
+    age:30,
+    ph:8988}
+
+for (var x in siet){
+    console.log(x,siet[x]);
+    }
+// for each loop method 
+var weeks=["monday","tuesday","wednesday","Thurusday"]
+weeks.forEach((d,i,p)=>{console.log(d,i);
+})
+// for of loop method
+let mach=["expresso","latte","milk"]
+for (var cub of mach){console.log(cub);
+}
